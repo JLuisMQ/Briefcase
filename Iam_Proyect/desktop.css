@@ -1,0 +1,22 @@
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto ;
+}
+header{
+    position: fixed;
+    /*La posicion de un elemento dentro del
+    documento.
+    Fixed El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página */
+    width: 100%;
+}
+header .container{
+    flex-direction: row;
+    /*
+    La propiedad CSS de dirección flexible establece cómo se colocan los elementos flexibles en el contenedor flexible que define el eje principal y la dirección (normal o invertida)*/
+    justify-content: space-between;
+}
+header nav{
+    flex-direction: row;
+    padding-right: 20px;
+}
