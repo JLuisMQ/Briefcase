@@ -10,10 +10,11 @@
     Esto permite mejorar el performance de la página.--> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width: 930px)">
 </head>
 <body>
     <header>
-        <img src="./assets/img/logo.svg" alt="">
+        <img loading=“lazy” src="./assets/img/logo.svg" alt="">
         <div class="header--title-container">
             <h1>La proxima revolucion en el intercambio de cripto monedas</h1>
             <p>Barabig te ayuda a navegar emtre los diferentes precios y tendencias</p>
@@ -122,17 +123,46 @@
             </div>
             <section class="plans-container--slider">
                 <article class="plans-container--card">
-                    <p>Recomendado</p>
-                    <div>
-                        <h3>PAGO ANUAL</h3>
-                        <p><span>$</span>99</p>
-                        <p>*Ahorras $129 comparado al plan mensual</p>
-                        <button>Escoger Plan <span>SPAN</span></button>
+                    <p class="recomended">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">PAGO ANUAL</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual</p>
+                        <button class="plan-card--ca">Escoger Plan <span></span></button>
                     </div>
-                </article>
+                 </article>
+                <article class="plans-container--card">
+                    <p class="recomended">Plan Mensual</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">PAGO MENSUAL</h3>
+                        <p class="plan-card--price"><span>$</span>19</p>
+                        <p class="plan-card--saving">Acceso ilimitado</p>
+                        <button class="plan-card--ca">Escoger Plan <span></span></button>
+                    </div>
+                 </article>
+                <article class="plans-container--card">
+                    <p class="recomended">Plan Sementral</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">PAGO SEMESTRAL</h3>
+                        <p class="plan-card--price"><span>$</span>59</p>
+                        <p class="plan-card--saving">Acceso ilimitado</p>
+                        <button class="plan-card--ca">Escoger Plan <span></span></button>
+                    </div>
+                 </article>
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crushbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="rigth">
+            <img loading=“lazy” src="./assets/img/logo-footer.svg" alt="Logo de patata 2022">
+        </section>
+    </footer>
 </body>
 </html>
