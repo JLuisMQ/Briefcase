@@ -1,0 +1,257 @@
+
+*{
+    box-sizing: border-box;
+    /*CUANDO AGREGAS MARGEN, PADDING, BORDE AYUDA A QUE NO CREZCA MAS DE LO QUE UNICO ESTABLECE*/
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p { font-size: 1.25em; }
+ul{list-style: none;}
+li{ font-size: 1.25em;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: blueviolet;
+
+}
+button:hover{
+    background-color: rgba(101, 33, 165);
+    /*El selector :hover se usa para seleccionar elementos cuando pasa el mouse sobre ellos.
+
+Sugerencia: el selector :hover se puede usar en todos los elementos, no solo en los enlaces.
+
+Sugerencia: utilice el selector :link para diseñar enlaces a páginas no visitadas, el selector :visited para diseñar enlaces a páginas visitadas y el selector :active para diseñar el enlace activo.
+
+Nota: :hover DEBE ir después de :link y :visited (si están presentes) en la definición de CSS, ¡para que sea efectivo!*/
+}
+.container{
+    max-width:flex;
+    flex-wrap: wrap;
+   
+}
+.color-acento{
+    color: blueviolet;
+}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        color: blueviolet;
+        font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blueviolet;
+    /*La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Img_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero h1{
+    color: white;
+    font-size: 5em;
+}
+#hero button{
+    font-size: 1.75em;
+}
+#barner-2 .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#courses{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#courses .container{
+    padding: 150px 12px;
+}
+#courses h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#courses p{
+    display: none;
+}
+#courses .letter{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.letter:first-child{
+    /*La pseudo-clase :first-child de CSS representa el primer elemento entre un grupo de elementos hermanos.
+    Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento, sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Img_02.jpg");
+
+}
+.letter:nth-child(2){
+    /*La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos.*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Img_04.jpg");
+   
+}
+.letter:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Img_03.jpg");
+}
+#caracteres .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#caracteres li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+#apply{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+#apply h2{
+    font-size: 9vw;
+}
+#apply button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(245, 245, 245);
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media(min-width: 800px){   
+    .container{
+        width: 800px;
+        /*CENTRAR DIRECTAMENTE*/
+        margin-left: auto;
+        margin-right: auto;
+        /*DE ARRIBA ABAJO NO GENERES MARGENES Y DE IZQUIERDA A DERECHA GENERA UN 
+        MARGEN AUTOMATICO*/
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    #barner-2 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #barner-2 .text{
+        width: 50%;
+        max-width: 800px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #barner2 h2{
+        margin-top: 0px;
+    }
+    #barner-2 .img-container{
+        background-image:url("Imagenes/Img_05.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #courses .programs{
+        display: flex;
+        justify-content: center;
+    }
+    #courses .programs p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #courses .programs h3{
+        margin-top: 0;
+    }
+    #courses-programs .letter{
+        padding: 15px;
+    }
+}

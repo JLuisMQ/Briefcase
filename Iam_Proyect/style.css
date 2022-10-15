@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /*AYUDA PARA QUE LA NAVEGACION SEA 
+    MAS SUAVE */
+}
+h1{ font-size: 4rem}
+h2{ font-size: 3rem;}
+h3{ font-size: 2rem;}
+p { font-size: 1.6rem; 
+    text-align: justify;}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /*ES UNA PROPIEDAD QUE ESPECIFICA EL PESO O GRUESO
+    DE LA LETRA ES COMO UNA "NEGRITA"*/
+    
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    /*ESPACIO INTERNO DENTRO DE UNA CAJA
+    LOS VALORES SON EL ESPACIO DE X/Y*/
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /*CREA UNA SOMBRA EN EL BOTON*/
+    color: white;
+    background-color: #DC7633 ;
+}
+button:hover{
+    background-color: #A04000 ;
+    /*AYUDA A VALIDAR CUANDO UN ELEMENTO
+    A SIDO SELECCIONADO POR EL MOUSE*/
+}
+.container{
+    max-width: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #F1C40F;
+}
+header .logo{
+    margin: 0;
+    /*ES UN ESPACIO AFUERA DE LA CAJA*/
+    padding: 25px 30px;
+    color: #2E4053;
+    font-size: 1.6rem;
+}
+header .container{
+    display: flex;
+    /*LA CAJA ABUELO VA SER FLEXIBLE CON LOS HIJOS*/
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    /*CAJA PADRE*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4px;
+}
+header a{
+    /*LOS HIJOS*/
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2980B9;
+    border: 1.6px solid black;
+    margin: 1.6px;
+}
+header a:hover{
+    color: white ;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("Imagenes/Img_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    La propiedad CSS background-size especifica el tamaño de las imágenes de fondo.
+    contain
+    Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.
+
+    cover
+    Escala la imagen al mayor tamaño posible sin estirarla. Si las proporciones de la imagen difieren de las del elemento, es recortada vertical u horizontalmente para que no quede un espacio vacío.*/
+}
+#hero h1{
+    color: white;
+    font-size: 5rem;
+}
+#introduction{
+    text-align: center;
+}
+#introduction .container{
+    padding: 7rem;
+}
+#introduction h2{
+    margin: 0.8rem;
+    font-size: 2rem;
+}
+#articule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    padding: 1.6rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("Imagenes/Img_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#articule h2{
+    color: white;
+    font-weight: bold;
+    /*"NEGRITA"*/
+}
+#articule p{
+    color: white;
+    margin: 1.6rem;
+}
+#courses{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#courses .container{
+    padding: 15rem 6rem;
+}
+#courses h2{
+    margin-top: 0;
+    font-size: 3.2rem;
+}
+#courses p{
+    display: none;
+}
+#courses .letter{
+    background-position: center center;
+    /*define la posición inicial de la imagen de fondo especificada.*/
+    background-size: cover;
+    padding: 3.5rem;
+    margin: 1.25rem;
+    border-radius: 15px;
+}
+.letter:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("Imagenes/html.jpg");
+}
+.letter:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Css.jpg");
+}
+.letter:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("Imagenes/Js.jpg");
+}
+#apply{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2E4053;
+    color: white;
+    height: 50vh;
+}
+#apply h2{
+    font-size: 9vw;
+    margin: 1.6rem;
+}
+#apply button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(245, 245, 245);
+}
+footer{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
